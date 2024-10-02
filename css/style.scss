@@ -1,0 +1,16 @@
+@import "bootstrap";
+
+$primary-color: #FF5733;
+$secondary-color: #C70039;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $primary-color;
+}
+
+// Exemple d'extend
+.btn-custom {
+  @extend .btn;
+  background-color: $secondary-color;
+  color: white;
+}
