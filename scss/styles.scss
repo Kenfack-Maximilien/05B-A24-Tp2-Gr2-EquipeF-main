@@ -1,4 +1,75 @@
-/*** Importation de Boostrap **/
-@import "partials/bootstrap";
+// Variables Sass pour personnaliser les couleurs
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$input-border-color: #ccc;
+$input-focus-border-color: $primary-color;
+$input-background-color: #f9f9f9;
 
-/*** Début des styles personnalisés ***/
+// Importer Bootstrap (personnalisation possible avant ou après importation)
+@import 'bootstrap';
+
+// Style général pour le formulaire
+form {
+  margin-top: 20px;
+  color: $text-color;
+
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  // Style des champs texte et email
+  .form-control {
+    background-color: $input-background-color;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: $input-focus-border-color;
+      box-shadow: none;
+    }
+  }
+
+  // Boutons radio et cases à cocher
+  .form-check-input {
+    margin-right: 10px;
+
+    &:checked {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  // Liste déroulante
+  .form-select {
+    background-color: $input-background-color;
+    border: 1px solid $input-border-color;
+    padding: 10px;
+
+    &:focus {
+      border-color: $input-focus-border-color;
+    }
+  }
+
+  // Input group pour le téléphone
+  .input-group-text {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  // Bouton d'envoi
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+  }
+}
