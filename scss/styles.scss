@@ -73,3 +73,38 @@ form {
     }
   }
 }
+// Variables personnalisées pour la navigation
+$navbar-bg-color: #f8f9fa;
+$navbar-text-color: #333;
+$navbar-hover-color: #3498db;
+
+// Styles regroupés pour la navbar
+.navbar {
+  background-color: $navbar-bg-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  // Marque du site (logo)
+  .navbar-brand, .nav-link {
+    color: $navbar-text-color;
+    font-size: 1.1rem;
+
+    &:hover, &.active {
+      color: $navbar-hover-color;
+      font-weight: bold;
+    }
+  }
+
+  // Bouton hamburger sur mobile
+  .navbar-toggler {
+    border: none;
+
+    .navbar-toggler-icon {
+      background-image: none;
+      &:before {
+        content: '\2630'; // Icône burger
+        font-size: 1.5rem;
+        color: $navbar-text-color;
+      }
+    }
+  }
+}
