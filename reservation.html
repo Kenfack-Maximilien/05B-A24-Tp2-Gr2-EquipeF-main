@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web sur le thème de la bouffe avec Bootstrap et design UX">
+    <title>Mon Site de Bouffe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+              
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="image/logo-sushi.png" alt="Logo" title="Accueil" width="25%">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="ateliers.html">Ateliers</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+                <div>
+                    <a href="#">
+                        <img src="image/burger.svg" alt="burger" width="5%" class="burger">
+                    </a>
+                </div>
+            </nav>
+        </header>
+    <div class="container">
+        <h1>Formulaire de Réservation</h1>
+        <form>
+            <div class="row mb-3">
+                <label for="nom" class="col-sm-2 col-form-label">Nom:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="typeActivite" class="col-sm-2 col-form-label">Type d'activité:</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeActivite" id="anniversaire" value="anniversaire">
+                        <label class="form-check-label" for="anniversaire">
+                            Anniversaire
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeActivite" id="entreprise" value="entreprise">
+                        <label class="form-check-label" for="entreprise">
+                            Événement d'entreprise
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="nombrePersonnes" class="col-sm-2 col-form-label">Nombre de personnes:</label>
+                <div class="col-sm-10">
+                    <select class="form-select" id="nombrePersonnes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="dateReservation" class="col-sm-2 col-form-label">Date de la réservation:</label>
+                <div class="col-sm-10">
+                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Réserver</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+          <ul>
+            <li><a href="#">Menu secondaire 1</a></li>
+            <li><a href="#">Menu secondaire 2</a></li>
+          </ul>
+        </div>
+        <p>© A2024, Equipe F</p>
+        <p>Par Ismaïl Belayachia et Maximilien Kenfack</p>
+        <a href="#" class="back-to-top">
+            <img src="image/up.svg" alt="retour en haut" width="5%">
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </main>    
+</body>
+</html>
